@@ -14,7 +14,7 @@ public class BasicArithmeticOparation {
         
         float Avarage=(float)(Number1+Number2)/2;
         System.out.println("Avarage"+Avarage);
-       
+        System.out.println("github check");
     }
     
 }

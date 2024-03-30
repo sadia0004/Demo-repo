@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="871.0" prefWidth="1222.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.CallOfDutySceneController">
+   <children>
+      <ComboBox fx:id="weapenTypeComboBox" layoutX="84.0" layoutY="75.0" onAction="#selectweaponComboBoxButtonOnClicked" prefHeight="31.0" prefWidth="230.0" promptText="Scelect weapon Type" />
+      <Label layoutX="622.0" layoutY="54.0" text="Enter Model:" />
+      <Label layoutX="611.0" layoutY="95.0" text="Enter Unit Price:" />
+      <TextField fx:id="modelTextField" layoutX="762.0" layoutY="49.0" />
+      <TextField fx:id="unitPriceTextField" layoutX="762.0" layoutY="90.0" />
+      <Button layoutX="124.0" layoutY="314.0" mnemonicParsing="false" onAction="#addWeaponInfoButtonOnClicked" prefHeight="31.0" prefWidth="910.0" text="Add a new weapon" />
+      <CheckBox fx:id="isDoubleEagedCB" layoutX="124.0" layoutY="218.0" mnemonicParsing="false" text="Is double Eadged?" />
+      <ComboBox fx:id="magazineCapacityComboBox" layoutX="880.0" layoutY="203.0" prefHeight="31.0" prefWidth="260.0" promptText="Scelect Magazine Capacity" />
+      <TextField fx:id="blustRadiusTextField" layoutX="565.0" layoutY="213.0" />
+      <Label layoutX="465.0" layoutY="208.0" text="Blust radius?" />
+      <Button layoutX="123.0" layoutY="376.0" mnemonicParsing="false" onAction="#overhaulWeaponButtonOnClicked" prefHeight="31.0" prefWidth="919.0" text="Overhaul All weapons" />
+      <Button layoutX="960.0" layoutY="452.0" mnemonicParsing="false" onAction="#showDetailsButtonOnClicked" text="Show Details" />
+      <RadioButton fx:id="sowrdRadioButton" layoutX="124.0" layoutY="467.0" mnemonicParsing="false" text="Sowrds" />
+      <RadioButton fx:id="GrenadeRadioButton" layoutX="302.0" layoutY="467.0" mnemonicParsing="false" text="Grenades" />
+      <RadioButton fx:id="pistolRadioButton" layoutX="495.0" layoutY="468.0" mnemonicParsing="false" text="Pistols" />
+      <RadioButton fx:id="allweaponRadioButton" layoutX="762.0" layoutY="468.0" mnemonicParsing="false" text="All weapons" />
+      <TableView fx:id="Tableview" layoutX="105.0" layoutY="546.0" prefHeight="261.0" prefWidth="919.0">
+        <columns>
+          <TableColumn fx:id="weaponInfoCol" prefWidth="917.9999694824219" text="Weapon Info:" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
